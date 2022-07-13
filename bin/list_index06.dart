@@ -6,4 +6,23 @@
     Returns:
         list: return answer
 */
-void main() {}
+List func( List list1){
+    int x = -1;
+    int y = list1.length - 1;
+    bool z = true;
+    while(x < y){
+        x++;
+        if(list1[x]==1){
+            list1[x]= z;
+
+
+        }
+    }
+    
+    return list1;
+    
+}
+void main() {
+    List list1;
+    print(func([0,1,1,0,1]));
+} 
