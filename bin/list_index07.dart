@@ -6,4 +6,18 @@
     Returns:
         list: return answer
 */
-void main() {}
+List func(List list1) {
+  int x = -1;
+  bool w = false;
+  while (x < list1.length - 1) {
+    x++;
+    if (list1[x] == 0) {
+      list1[x] = w;
+    }
+  }
+  return list1;
+}
+
+void main() {
+  print(func([1, 0, 0, 1, 1]));
+}
